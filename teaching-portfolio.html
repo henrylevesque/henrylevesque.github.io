@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Portfolio | Henry Levesque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .privacy-note {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 1.5rem 2rem;
+            background: var(--gray-100);
+            border-left: 4px solid var(--black);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+        
+        .privacy-note strong {
+            font-weight: 500;
+        }
+        
+        .student-attribution {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8125rem;
+            color: var(--gray-600);
+            margin-top: 0.5rem;
+        }
+        
+        .course-header {
+            max-width: 1400px;
+            margin: 0 auto 3rem;
+            padding: 0 clamp(1.5rem, 5vw, 6rem);
+        }
+        
+        .course-info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        @media (max-width: 968px) {
+            .course-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .course-details {
+            background: var(--gray-100);
+            padding: 2rem;
+        }
+        
+        .course-details h4 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .detail-row {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.9375rem;
+        }
+        
+        .detail-label-inline {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8125rem;
+            color: var(--gray-600);
+        }
+        
+        .outcomes-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .outcomes-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .outcomes-list li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gray-600);
+        }
+        
+        .example-work-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 6rem);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+        
+        .work-example {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .work-example-image {
+            margin-bottom: 1.5rem;
+            background: var(--gray-200);
+        }
+        
+        .work-example-info h4 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .work-example-info p {
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .skills-demonstrated {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-300);
+        }
+        
+        .skills-demonstrated strong {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        
+        .skills-demonstrated p {
+            font-size: 0.9375rem;
+            color: var(--gray-600);
+        }
+        
+        .methodology-section {
+            background: var(--gray-100);
+            padding: clamp(3rem, 6vw, 5rem) 0;
+            margin: 4rem 0;
+        }
+        
+        .methodology-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 5vw, 6rem);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .method-card {
+            background: var(--white);
+            padding: 2rem;
+        }
+        
+        .method-card h4 {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .method-card p {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            color: var(--gray-700);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-name">Henry Levesque</a>
+            <div class="nav-menu">
+                <a href="index.html#research">Research</a>
+                <a href="index.html#teaching">Teaching</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <div class="hero-label">Teaching Portfolio</div>
+            <h1 class="hero-title">
+                Studio-Based Design Education
+            </h1>
+            <div class="hero-meta">
+                <span>Evidence of Teaching Effectiveness & Student Outcomes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Note -->
+    <section class="section">
+        <div class="grid-container">
+            <div class="col-12">
+                <div class="privacy-note">
+                    <strong>Student Privacy Statement:</strong> This portfolio showcases student work created under my instruction to demonstrate teaching effectiveness and student outcomes. All student work is presented with permission and appropriate attribution. Student names are included only where students have provided explicit consent for their work to be shared in this professional context. Project descriptions emphasize pedagogical approach and learning outcomes rather than individual student performance.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Philosophy -->
+    <section class="section">
+        <div class="grid-container">
+            <div class="col-12">
+                <h2 style="margin-bottom: 2rem;">Teaching Philosophy</h2>
+                <div class="course-info-grid">
+                    <div>
+                        <p class="intro-text">
+                            My teaching philosophy is grounded in studio-based, research-informed learning, with a 
+                            strong emphasis on undergraduate industrial design education. I believe undergraduate 
+                            studios are where students develop foundational design habits, ethical awareness, and 
+                            confidence as makers and thinkers.
+                        </p>
+                        <p>
+                            In my studios, I emphasize human-centered inquiry, accessibility, and iterative making. 
+                            Students are encouraged to move beyond form-driven solutions toward designs grounded in 
+                            research, context, and impact. Projects balance conceptual rigor with technical skill 
+                            development in CAD, digital fabrication, visualization, and prototyping.
+                        </p>
+                    </div>
+                    <div class="course-details">
+                        <h4>Core Pedagogical Values</h4>
+                        <ul class="outcomes-list">
+                            <li>Research-informed design process</li>
+                            <li>Human-centered methodology</li>
+                            <li>Accessibility & universal design</li>
+                            <li>Iterative physical prototyping</li>
+                            <li>Technical skill development</li>
+                            <li>Critical design discourse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course 1: INDL 2010 -->
+    <section class="section dark-section">
+        <div class="section-header">
+            <h2 class="section-number">01</h2>
+            <h2 class="section-title">INDL 2010: Industrial Design Studio 2</h2>
+        </div>
+
+        <div class="course-header">
+            <div class="course-info-grid">
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; font-weight: 400;">Coffee and Tea Piazza Project</h3>
+                    <p>
+                        Students designed a set of inter-related objects supporting the culture of serving and 
+                        consuming coffee or tea. This project expanded perspectives on the relationship between 
+                        culture, ritual, form, perception, and materiality in everyday products.
+                    </p>
+                    <p>
+                        The project structure followed visual analysis of forms embedded within coffee cultures, 
+                        exploration of inspiration for new applications, 2D and 3D exploration and prototyping, 
+                        form and functionality validation, and finalization and presentation of project outcomes.
+                    </p>
+                </div>
+                <div class="course-details">
+                    <h4>Course Information</h4>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Role:</span>
+                        <span>Co-Instructor with Craig Vogel</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Term:</span>
+                        <span>Fall 2022</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Level:</span>
+                        <span>Sophomore (Foundation)</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Credits:</span>
+                        <span>6 hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-details">
+                <h4>Student Learning Outcomes</h4>
+                <ul class="outcomes-list">
+                    <li>Design with materials: learning about materiality, constraints and opportunities</li>
+                    <li>Design for users: using methods for understanding users and human-centered design principles</li>
+                    <li>Design 2D and 3D forms and create meaningful products</li>
+                    <li>Communicate projects through varied presentation methods from digital to printed media</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-work-grid">
+            <div class="work-example">
+                <div class="work-example-image">
+                    <div class="image-placeholder wide">
+                        <span class="placeholder-label">German Coffee Ritual</span>
+                    </div>
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>Pharisäer Kaffee: Cultural Coffee Ritual Design</h4>
+                    <p class="student-attribution">Student work, Fall 2022</p>
+                    <p>
+                        This project explored German coffee culture, specifically the Pharisäer tradition of 
+                        coffee with rum and whipped cream. The student conducted cultural research, explored 
+                        flavor profiles, and designed a measuring/serving system that respects the ritual while 
+                        allowing personalization.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Demonstrated</strong>
+                        <p>Cultural research, user-centered design, form development, context analysis, 
+                        visualization, material exploration, presentation design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <div class="image-placeholder wide">
+                        <span class="placeholder-label">Moka Pot Redesign</span>
+                    </div>
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>Futurista: Contemporary Moka Pot Design</h4>
+                    <p class="student-attribution">Student work, Fall 2022</p>
+                    <p>
+                        Redesign of the classic Italian moka pot inspired by Futurism, Russian Avant-Garde, 
+                        and Memphis Design movements. The student analyzed the historical context of the original 
+                        Bialetti design and reinterpreted it through contemporary aesthetic movements.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Demonstrated</strong>
+                        <p>Historical research, aesthetic analysis, iterative physical modeling, CAD development, 
+                        rendering techniques, material selection, form development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course 2: INDL 2011 -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-number">02</h2>
+            <h2 class="section-title">INDL 2011: Industrial Design Studio 3</h2>
+        </div>
+
+        <div class="course-header">
+            <div class="course-info-grid">
+                <div>
+                    <h3 style="margin-bottom: 1.5rem; font-weight: 400;">Power Operated Handheld Device Project</h3>
+                    <p>
+                        Students designed a power-operated handheld tool for a specific user and task, employing 
+                        a multi-phase user-centered design process. The project emphasized deep technical understanding 
+                        of electrical components, materials, manufacturing processes, and iterative physical prototyping.
+                    </p>
+                    <p>
+                        My teaching focus emphasized immersive user research, task analysis, and iterative foam modeling 
+                        as critical steps in developing human-centered handheld tools. Students learned to balance 
+                        functional requirements, ergonomics, brand language, and aesthetic execution.
+                    </p>
+                </div>
+                <div class="course-details">
+                    <h4>Course Information</h4>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Role:</span>
+                        <span>Co-Instructor with John Dixon</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Term:</span>
+                        <span>Summer 2023</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Level:</span>
+                        <span>Junior (Intermediate)</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label-inline">Duration:</span>
+                        <span>13 weeks (intensive)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-details">
+                <h4>Student Learning Outcomes</h4>
+                <ul class="outcomes-list">
+                    <li>Employ basic analytical design research methodologies including user immersion and task analysis</li>
+                    <li>Manipulate three-dimensional form to communicate desired messages and functions</li>
+                    <li>Select appropriate materials and manufacturing processes based on research and testing</li>
+                    <li>Synthesize design development into clear, professional presentations</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-work-grid">
+            <div class="work-example">
+                <div class="work-example-image">
+                    <div class="image-placeholder wide">
+                        <span class="placeholder-label">User Research Process</span>
+                    </div>
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Process Example</div>
+                    <h4>User-Centered Research & Immersion</h4>
+                    <p class="student-attribution">Collective student work example, Summer 2023</p>
+                    <p>
+                        Students conducted immersion experiences with users in professional and amateur contexts, 
+                        documented tool usage through photography and video, and developed comprehensive task analyses. 
+                        This foundation informed all subsequent design decisions and iterations.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Methods Taught</strong>
+                        <p>Immersion research, user interviews, task analysis, state-of-the-art analysis, 
+                        ethnographic observation, photo/video documentation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <div class="image-placeholder wide">
+                        <span class="placeholder-label">Iterative Prototyping</span>
+                    </div>
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Process Example</div>
+                    <h4>Foam Modeling & Physical Iteration</h4>
+                    <p class="student-attribution">Collective student work example, Summer 2023</p>
+                    <p>
+                        Through multiple rounds of foam modeling (10+ iterations per student), students refined 
+                        form, ergonomics, and brand language. This hands-on iteration process developed their 
+                        ability to balance functional requirements with aesthetic execution before moving to CAD.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Developed</strong>
+                        <p>Foam sculpting (cabriole technique), ergonomic refinement, form iteration, 
+                        human factors analysis, brand coherence, manufacturing feasibility</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <div class="image-placeholder wide">
+                        <span class="placeholder-label">Final Deliverables</span>
+                    </div>
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>CAD Development & CNC Prototyping</h4>
+                    <p class="student-attribution">Collective student work example, Summer 2023</p>
+                    <p>
+                        Final projects included detailed CAD models, CNC-machined prototypes with high-quality 
+                        finishing, appearance renderings with exploded views, and comprehensive presentation boards. 
+                        Students demonstrated mastery of digital and physical prototyping workflows.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Technical Skills</strong>
+                        <p>CAD modeling, rendering (Keyshot/Twinmotion), CNC machining, model finishing and 
+                        assembly, technical illustration, presentation design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Methodology -->
+    <section class="methodology-section">
+        <div class="section-header" style="border-color: var(--gray-900);">
+            <h2 class="section-number" style="color: var(--gray-600);">03</h2>
+            <h2 class="section-title" style="color: var(--gray-900);">Teaching Methodology</h2>
+        </div>
+
+        <div class="methodology-grid">
+            <div class="method-card">
+                <h4>Double Diamond Framework</h4>
+                <p>
+                    I structure projects using the Double Diamond process (Discover, Define, Develop, Document, 
+                    Deliver) to help students develop systematic approaches to design problems and understand 
+                    divergent/convergent thinking.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h4>Human-Centered Research</h4>
+                <p>
+                    Students conduct immersion experiences, user interviews, and task analyses to ground design 
+                    decisions in real user needs rather than assumptions. Research skills are emphasized as 
+                    foundational to good design.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h4>Iterative Making</h4>
+                <p>
+                    Emphasis on multiple rounds of physical prototyping (foam models, CNC iterations) before 
+                    finalizing designs. Students learn that iteration and refinement are essential to achieving 
+                    excellence.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h4>Design Critique Culture</h4>
+                <p>
+                    Structured group critiques and individual desk crits emphasize constructive feedback and design 
+                    discourse. Students develop the ability to articulate design decisions and receive feedback 
+                    professionally.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h4>Accessibility Focus</h4>
+                <p>
+                    Integration of universal design principles and encouragement to consider who designs serve. 
+                    Students learn to think critically about inclusion and equity in their design work.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h4>Technical Skill Integration</h4>
+                <p>
+                    CAD, rendering, digital fabrication, and presentation skills are developed throughout projects 
+                    rather than taught in isolation. Students learn tools in context of real design problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment -->
+    <section class="section">
+        <div class="grid-container">
+            <div class="col-12">
+                <h2 style="margin-bottom: 2rem;">Assessment & Student Outcomes</h2>
+                <div class="course-info-grid">
+                    <div>
+                        <h3 style="margin-bottom: 1.5rem; font-weight: 400;">Evaluation Framework</h3>
+                        <p>
+                            I evaluate student work across four primary criteria:
+                        </p>
+                        <ul class="outcomes-list" style="margin-top: 1.5rem;">
+                            <li><strong>Functionality & Depth of Development:</strong> Effectiveness of design from a 
+                            user-centered perspective. Evidence of thorough exploration of design options, problem 
+                            solving, and concept iterations.</li>
+                            <li><strong>Brand & Aesthetic Appeal:</strong> Application of brand language and appropriate 
+                            aesthetic to all aspects of design.</li>
+                            <li><strong>Communication:</strong> Clear conveyance of design thinking, ideation, and solutions 
+                            in both 2D and 3D formats. Effective delivery of presentations.</li>
+                            <li><strong>Craft & Professionalism:</strong> Excellence in craft and precision. Work completed 
+                            on time, receptiveness to feedback, and overall professionalism.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="course-details">
+                            <h4>Observed Student Growth</h4>
+                            <ul class="outcomes-list">
+                                <li>Increased confidence in conducting user research</li>
+                                <li>Significant improvement in CAD and rendering skills</li>
+                                <li>Development of sophisticated design thinking</li>
+                                <li>Enhanced ability to articulate design decisions</li>
+                                <li>Growth in receiving and integrating feedback</li>
+                                <li>Production of portfolio-quality work</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Materials -->
+    <section class="section dark-section">
+        <div class="contact-content">
+            <h2 class="contact-title">Supporting Materials</h2>
+            <p class="contact-intro">
+                Complete course syllabi, project briefs, assessment rubrics, and additional student work 
+                examples are available upon request. These materials demonstrate my approach to course design, 
+                learning outcomes development, and alignment with DAAP's studio pedagogy.
+            </p>
+            <a href="index.html#contact" class="button-primary" style="background: var(--white); color: var(--black); border-color: var(--white);">Request Additional Materials</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Henry Levesque</p>
+            <p class="footer-note"><a href="index.html" style="color: var(--gray-500);">← Return to Main Portfolio</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
