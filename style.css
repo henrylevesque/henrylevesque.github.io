@@ -573,8 +573,13 @@ a:hover {
 .portfolio-img {
     width: 100%;
     aspect-ratio: 4/5;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+    background: var(--gray-100);
+}
+
+.dark-section .portfolio-img {
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .work-image .portfolio-img {
