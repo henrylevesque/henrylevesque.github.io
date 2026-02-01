@@ -568,15 +568,17 @@ a:hover {
 
 .work-image {
     margin-bottom: 1.5rem;
-
 }
 
 .portfolio-img {
     width: 100%;
-    aspect-ratio: 16/10;
+    aspect-ratio: 4/5;
     object-fit: cover;
     display: block;
-    border-radius: 6px;
+}
+
+.work-image .portfolio-img {
+    aspect-ratio: 16/10;
 }
 
 .work-caption h4 {

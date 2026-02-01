@@ -54,6 +54,24 @@
             padding: 2rem;
         }
         
+        .dark-section .course-details {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+        
+        .dark-section .course-details h4 {
+            color: var(--white);
+        }
+        
+        .dark-section .detail-label-inline {
+            color: var(--gray-400);
+        }
+        
+        .dark-section .outcomes-list li:before {
+            color: var(--gray-400);
+        }
+        
         .course-details h4 {
             font-size: 0.875rem;
             text-transform: uppercase;
@@ -111,7 +129,10 @@
         
         .work-example-image {
             margin-bottom: 1.5rem;
-            background: var(--gray-200);
+        }
+        
+        .work-example-image .portfolio-img {
+            aspect-ratio: 4/3;
         }
         
         .work-example-info h4 {
@@ -184,6 +205,7 @@
             <div class="nav-menu">
                 <a href="index.html#research">Research</a>
                 <a href="index.html#teaching">Teaching</a>
+                <a href="index.html#work">Work</a>
                 <a href="index.html#contact">Contact</a>
             </div>
         </div>
@@ -346,6 +368,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <img src="images/studentworkindustrialcoffee2.jpeg" alt="Industrial coffee maker design" class="portfolio-img">
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>Industrial Coffee Brewer System</h4>
+                    <p class="student-attribution">Student work, Fall 2022</p>
+                    <p>
+                        Design of a commercial-grade coffee brewing system exploring industrial aesthetics 
+                        and professional café environments. The student balanced functionality, durability, 
+                        and brand expression for high-volume service contexts.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Demonstrated</strong>
+                        <p>User context analysis, technical requirements, material specification, 
+                        CAD modeling, professional rendering, brand development</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -406,63 +449,63 @@
         <div class="example-work-grid">
             <div class="work-example">
                 <div class="work-example-image">
-                    <img src="images/studentworkwetsander1.jpeg" alt="Wet sander power tool" class="portfolio-img">
-                </div>
-                <div class="work-example-info">
-                    <div class="project-tag">Process Example</div>
-                    <h4>User-Centered Research & Immersion</h4>
-                    <p class="student-attribution">Collective student work example, Summer 2023</p>
-                    <p>
-                        Students conducted immersion experiences with users in professional and amateur contexts, 
-                        documented tool usage through photography and video, and developed comprehensive task analyses. 
-                        This foundation informed all subsequent design decisions and iterations.
-                    </p>
-                    <div class="skills-demonstrated">
-                        <strong>Methods Taught</strong>
-                        <p>Immersion research, user interviews, task analysis, state-of-the-art analysis, 
-                        ethnographic observation, photo/video documentation</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work-example">
-                <div class="work-example-image">
-                    <img src="images/studentworkcastsaw1.jpeg" alt="Cast saw tool redesign" class="portfolio-img">
-                </div>
-                <div class="work-example-info">
-                    <div class="project-tag">Process Example</div>
-                    <h4>Foam Modeling & Physical Iteration</h4>
-                    <p class="student-attribution">Collective student work example, Summer 2023</p>
-                    <p>
-                        Through multiple rounds of foam modeling (10+ iterations per student), students refined 
-                        form, ergonomics, and brand language. This hands-on iteration process developed their 
-                        ability to balance functional requirements with aesthetic execution before moving to CAD.
-                    </p>
-                    <div class="skills-demonstrated">
-                        <strong>Skills Developed</strong>
-                        <p>Foam sculpting (cabriole technique), ergonomic refinement, form iteration, 
-                        human factors analysis, brand coherence, manufacturing feasibility</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="work-example">
-                <div class="work-example-image">
-                    <img src="images/studentworkindustrialcoffee1.jpeg" alt="Industrial coffee maker" class="portfolio-img">
+                    <img src="images/studentworkclipper1.jpeg" alt="Professional hair clipper design" class="portfolio-img">
                 </div>
                 <div class="work-example-info">
                     <div class="project-tag">Student Work</div>
-                    <h4>CAD Development & CNC Prototyping</h4>
-                    <p class="student-attribution">Collective student work example, Summer 2023</p>
+                    <h4>Professional Hair Clipper: Ergonomic Design</h4>
+                    <p class="student-attribution">Student work, Summer 2023</p>
                     <p>
-                        Final projects included detailed CAD models, CNC-machined prototypes with high-quality 
-                        finishing, appearance renderings with exploded views, and comprehensive presentation boards. 
-                        Students demonstrated mastery of digital and physical prototyping workflows.
+                        Design of a professional hair clipper developed through extensive user research with 
+                        barbers and stylists. The student conducted immersion experiences, analyzed task patterns, 
+                        and created multiple foam iterations to optimize grip comfort for extended use.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Demonstrated</strong>
+                        <p>User immersion research, task analysis, ergonomic development, foam modeling iteration, 
+                        CAD development, professional rendering, technical specification</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <img src="images/studentworkwetsander2.jpeg" alt="Wet sander power tool" class="portfolio-img">
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>Wet Sander: Tool Redesign for Marine Applications</h4>
+                    <p class="student-attribution">Student work, Summer 2023</p>
+                    <p>
+                        Design of a wet sander for marine and automotive refinishing applications. Through 
+                        iterative foam modeling, the student refined grip positions, weight balance, and 
+                        control surfaces to accommodate wet environments and prolonged use.
+                    </p>
+                    <div class="skills-demonstrated">
+                        <strong>Skills Demonstrated</strong>
+                        <p>Foam sculpting (cabriole technique), ergonomic refinement, form iteration, 
+                        human factors analysis, brand coherence, CNC prototyping</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <div class="work-example-image">
+                    <img src="images/studentworkclipper3.jpeg" alt="Hair clipper final rendering" class="portfolio-img">
+                </div>
+                <div class="work-example-info">
+                    <div class="project-tag">Student Work</div>
+                    <h4>Final CAD & Rendering: Professional Presentation</h4>
+                    <p class="student-attribution">Student work, Summer 2023</p>
+                    <p>
+                        Final deliverables included detailed CAD models, high-quality renderings with exploded 
+                        technical views, and comprehensive presentation boards. Students demonstrated mastery 
+                        of professional communication and digital prototyping workflows.
                     </p>
                     <div class="skills-demonstrated">
                         <strong>Technical Skills</strong>
-                        <p>CAD modeling, rendering (Keyshot/Twinmotion), CNC machining, model finishing and 
-                        assembly, technical illustration, presentation design</p>
+                        <p>SolidWorks CAD modeling, Keyshot rendering, technical illustration, exploded view 
+                        diagrams, presentation board layout, professional documentation</p>
                     </div>
                 </div>
             </div>
